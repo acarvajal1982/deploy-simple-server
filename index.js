@@ -7,6 +7,7 @@ app.use(express.json());
 
 app.use((req,res,next)=>{
   res.send("my computer is speaking")
+  res.send("yes, I did it")
 })
 //heroku injects the port number into the PORT env value
 const port = process.env.PORT || 3001;
